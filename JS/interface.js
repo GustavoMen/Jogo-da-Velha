@@ -13,11 +13,24 @@ function handleClick(event) {
     let square = event.target;
     let position = square.id;
 
-    handleMove(position);
-    updateSquares();
+    if(handleMove(position)){
+        setTimeout (()=>{
+            alert ("O jogo acabou - O vencedor foi " + Symbol)
+        },10);
+
+        
+    };
+    updateSquare(position);
 }
 
-function updateSquares(){
+function updateSquare(position) {
+    let square = document.getElementById(position.toString());
+    let symbol = board[position];
+    square.innerHTML = `<div class='${symbol}'></div>`
+    
+}
+
+function updateSquaresNew(){
     
     let squares = document.querySelectorAll('.square')
 
@@ -30,3 +43,4 @@ function updateSquares(){
         }
     })
 }
+
