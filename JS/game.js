@@ -54,3 +54,15 @@ function isWin() {
     }
     return false;
 }
+
+function clearBoard() {
+    board = ['', '', '', '', '', '', '', '', '']
+}
+
+function resetTurn() {
+    playertime = 0;
+}
+
+function resetGameState() {
+    gameover = false;
+}
