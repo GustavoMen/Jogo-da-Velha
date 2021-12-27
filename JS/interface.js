@@ -15,7 +15,7 @@ function handleClick(event) {
 
     if(handleMove(position)){
         setTimeout (()=>{
-            alert ("O jogo acabou - O vencedor foi " + )
+            alert ("O jogo acabou - O vencedor foi ")
         },10);
 
         
