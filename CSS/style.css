@@ -1,9 +1,11 @@
 body{
     text-align: center;
+    background-color: black;
 }
 
 h1{
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 .square{
@@ -11,7 +13,7 @@ h1{
     display: inline-block;
     width: 100px;
     height: 100px;
-    background-color: beige;
+    background-color: gray;
     border: 1px solid gray;
 }
 
@@ -45,8 +47,50 @@ h1{
     right: 0;
 }
 
+
+.result, td ,tr{
+    width: 300px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px rgb(255, 255, 255);
+    margin: auto;
+    font-family: 'Shadows Into Light', Arial, sans-serif;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+
 .btn{
+    font-size: larger;
     width: 200px;
     height: 50px;
+    border-radius: 10px;
+    border: solid 1px rgb(255, 255, 255);
+    margin-top: 30px;
+
+    transition: background-color 500ms, width  1s, height 1s;
 }
+
+.btn:hover{
+    background-color: gray;
+    width: 250px;
+    height: 60px;
+}
+
+
+@media only screen and (max-width: 400px){
+    .square{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+
+
+
+
+
 
